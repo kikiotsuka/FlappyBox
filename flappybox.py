@@ -51,7 +51,7 @@ class Obstacles:
 		self.x = screenwidth
 		self.width = 40
 		self.heightgap = 100
-		self.y = randint(screenheight / 7, screenheight * 5 / 7)
+		self.y = randint(screenheight * 2 // 7, screenheight * 5 // 7)
 		self.rectangle1 = Rect(self.x, 0, self.width, self.y)
 		self.rectangle2 = Rect(self.x, self.y + self.heightgap, self.width, screenheight - self.heightgap - self.y)
 
