@@ -132,7 +132,9 @@ while True:
 				elif event.key == K_q:
 					pygame.quit()
 					sys.exit()
-
+                        elif event.type == MOUSEBUTTONDOWN:
+				started = True
+				player.startjump()
 		#Update screen and FPS delay
 		pygame.display.update()
 		fpsClock.tick(60)
