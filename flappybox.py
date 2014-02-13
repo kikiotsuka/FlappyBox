@@ -116,7 +116,7 @@ while True:
 			windowSurfaceObj.blit(msgSurfaceObj, msgRectobj)
 		else:
 			pygame.draw.rect(windowSurfaceObj, green, player.getrect())
-			msgSurfaceObj = fontObj.render('Press Space to Start', False, black)
+			msgSurfaceObj = fontObj.render('Press Space or Click to Start', False, black)
 			msgRectobj = msgSurfaceObj.get_rect()
 			msgRectobj.center = (screenwidth / 2, screenheight / 2)
 			windowSurfaceObj.blit(msgSurfaceObj, msgRectobj)
